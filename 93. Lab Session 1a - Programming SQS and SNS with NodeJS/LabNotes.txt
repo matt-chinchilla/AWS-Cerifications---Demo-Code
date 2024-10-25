@@ -10,3 +10,12 @@
 
 4) go to API documentation page at:
     * https://www.aws.amazon.com/sdk-for-node-js/
+
+5) Creating the Queue parsed an error, we need to update to AWS SDK v3
+    * change directory into cd 93 (tab) to autocomplete
+    * install the SQS C3's modular packages  with:
+        ** npm install @aws-adk/client-sqs 
+    * Edit existing code to accomodate SQS JavaScript v3   
+        ** Is more efficient because it only imports necessary modules
+        ** Becomes modular as well
+
