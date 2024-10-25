@@ -19,3 +19,35 @@
         ** Is more efficient because it only imports necessary modules
         ** Becomes modular as well
 
+6) For the sake of continuance, we will follow lab Notes
+    * Adding the method of createMessages(data.QueueUrl)
+        ** Adds a message to the queue with the specified Required Parameters (according to the documentation)
+        ** Needed to have "QueueName" as the Parameter of type "string"
+        ** Located at data.QueueUrl
+
+7) Write the Logic for the "createMessages" asynchronous function
+    * Waits until each return to throw another output
+    * Throws MD5 (Message Digest algorithm) to verify Aamazon SQS recieved the Message correctly
+        ** Amazon SQS URL-decodes the message before creating the MD5 Digest
+    * Also throws the MessageId
+        ** Each message sent to the queue has a unique ID for the operation
+
+8) Adendem: If the Queue "chirichella-lab" already exists:
+    * Will not be created again
+
+------------------------------------------------------------------------------------------------------------
+
+9) Next Goal: Send the messages as a Batch rather than individually
+    * Saves the amount of calls being sent
+    * Will likely use the sendMessageBatchCommand()
+        ** Requires Input parameters of MessageBody (String) && QueueUrl (String)
+    * Will send as:
+        * 5 batches of 10 Messages
+
+------------------------------------------------------------------------------------------------------------
+
+10) Next Goal: Retrieve these messages -> Do something with them -> Delete them from the Queue
+    * 10a) Save the QueueUrl
+        ** Add: queueURL = data.QueueUrl;
+    * 10b) set "waitingSQS" Variable to false
+        ** When waiting for a response, do not send another one
