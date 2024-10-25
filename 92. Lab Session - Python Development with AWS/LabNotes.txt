@@ -1,0 +1,10 @@
+1) Created new Folder in terminal with the following line:
+    * \\filepath> New-Item -ItemType Directory -Name "92. Lab Session - Python Development with AWS"
+        ** -ItemType specifies what the type of item it will be
+        ** -Name Give the new Item its directory Name
+
+2) Created this .txt file with the following line:
+    *  \\filepath> New-Item -ItemType File -Path "92. Lab Session - Python Development with AWS/LabNotes.txt"
+        ** -Path keyword is needed to specify where the to-be added is located
+        ** Item is added after the directory, and is given its name & filetype as /LabNotes.txt
+        
