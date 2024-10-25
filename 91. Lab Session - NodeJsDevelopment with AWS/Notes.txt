@@ -1,0 +1,17 @@
+1) Verified the version of the NodeJs running with the Terminal Command:
+    * node --version 
+    
+2) Wrote to the Console log in the Node.js language with the Command:
+    * console.log('Hello World!');
+
+3) Cloned Existing repo from https://github.com/backspace-academy/aws-cloud9-nodejs using Command
+    * git clone https://github.com/backspace-academy/aws-cloud9-nodejs
+
+4) cd into aws-cloud9-nodejs 
+
+5) ran npm install to install dependencies & resolve that
+    * Ex: PS D:\Super Cool Coding Stuff\AWS Cerifications - Demo Code\91. Lab Session - NodeJsDevelopment with AWS\aws-cloud9-nodejs> npm install
+
+6) went to https://aws.amazon.com/developer/tools/ in order to see documentation for s3 buckets
+    * Looking to see what ammendments can be made to the "s3.listBuckets(function(err, data))" Call
+    

@@ -1,0 +1,42 @@
+AWSTemplateFormatVersion: 2010-09-09
+Metadata:
+  'AWS::CloudFormation::Designer':
+    f8cc58ce-eb3e-4b2a-90d1-9b53f795e497:
+      size:
+        width: 820
+        height: 420
+      position:
+        x: 90
+        'y': 70
+      z: 0
+      embeds:
+        - 069f24ec-0590-4198-aa82-61a1731ebe30
+    069f24ec-0590-4198-aa82-61a1731ebe30:
+      size:
+        width: 620
+        height: 320
+      position:
+        x: 110
+        'y': 120
+      z: 1
+      parent: f8cc58ce-eb3e-4b2a-90d1-9b53f795e497
+      embeds: []
+Resources:
+  BackspaceEC2VPC:
+    Type: 'AWS::EC2::VPC'
+    Properties:
+      CidrBlock: 10.0.0.0/16
+      EnableDnsSupport: 'true'
+      EnableDnsHostnames: 'true'
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: f8cc58ce-eb3e-4b2a-90d1-9b53f795e497
+  PublicSubnet:
+    Type: 'AWS::EC2::Subnet'
+    Properties:
+      VpcId: !Ref BackspaceEC2VPC
+      CidrBlock: 10.0.0.0/24
+      AvailabilityZone: us-east-1a
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 069f24ec-0590-4198-aa82-61a1731ebe30
