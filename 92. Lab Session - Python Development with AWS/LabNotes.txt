@@ -6,5 +6,5 @@
 2) Created this .txt file with the following line:
     *  \\filepath> New-Item -ItemType File -Path "92. Lab Session - Python Development with AWS/LabNotes.txt"
         ** -Path keyword is needed to specify where the to-be added is located
-        ** Item is added after the directory, and is given its name & filetype as /LabNotes.txt
+        ** Item is added after the directory, and is given its name & filetype as /LabNotes.txt 
         
