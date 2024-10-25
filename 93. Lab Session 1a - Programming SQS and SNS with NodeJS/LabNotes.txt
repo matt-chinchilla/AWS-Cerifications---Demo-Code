@@ -1,0 +1,12 @@
+1) Made LabNotes.txt using method specified in Chapter 92
+
+2) Lab Goals:
+    * Create an SQS queue using AWS Node.js SDK
+    * Create & send messages to SQS queue (again with the SDK)
+    * Process/ Retrieve messages afterwards
+
+3) Paste JavaScript code from page 6 of Lab Notes
+    * I wrote it because its a nice reminder
+
+4) go to API documentation page at:
+    * https://www.aws.amazon.com/sdk-for-node-js/
