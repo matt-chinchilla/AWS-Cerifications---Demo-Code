@@ -7,4 +7,17 @@
     *  \\filepath> New-Item -ItemType File -Path "92. Lab Session - Python Development with AWS/LabNotes.txt"
         ** -Path keyword is needed to specify where the to-be added is located
         ** Item is added after the directory, and is given its name & filetype as /LabNotes.txt 
-        
+
+3) Learned that the AWS Python SDK is called "boto"
+    * Command to check is: pip show boto3
+    * Installed it with: pip install --user boto3
+
+4) Make a 'Hello World!' file
+
+5) Clone from the repo he made with CLI:
+    * git clone https://github.com/backspace-academy/aws-cloud9-python
+
+6) Learn more about AWS's SDK for Python (boto3) at:
+    * https://aws.amazon.com/tools
+    * Navigate to API reference page
+        ** Look at all pssoble S3 Methods
