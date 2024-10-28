@@ -1,0 +1,6 @@
+1) implement git clone https://github.com/backspace-academy/aws-sqs-python for sample function
+    * 1a) Will be same as Lab session 1a, but with Python instead of Node.js
+    * 1b) Verify boto3 installation with:
+        ** pip show boto3
+        ** Refractoring code because its a bit much for one file
+
