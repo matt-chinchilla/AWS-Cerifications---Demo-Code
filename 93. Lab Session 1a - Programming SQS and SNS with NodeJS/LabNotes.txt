@@ -51,3 +51,6 @@
         ** Add: queueURL = data.QueueUrl;
     * 10b) set "waitingSQS" Variable to false
         ** When waiting for a response, do not send another one
+    * 10c) Make the "recieveMessage()" function 
+        ** Reference API documentation for more
+    * 10d) Add the processMessages(data.Messages) function
