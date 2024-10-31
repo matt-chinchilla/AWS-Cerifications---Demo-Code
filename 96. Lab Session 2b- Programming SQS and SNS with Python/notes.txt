@@ -1,0 +1,33 @@
+1) Goals:
+    * Creating an SNS topic
+
+    * Have SQS queue subscrube to that topic
+        **Why?:
+        ** When messages are published to that topic --> will be picked up in SNS queue
+        ** Create Permissions that allow this to happen
+
+    * Write some python that allows me to send SNS messages && publish them to SNS topic
+
+2) Remove Obsolete/Depreceated code
+    * tab-out the "create_messages(sqs_queue_url) component in MAIN METHOD
+    * Also the print() after
+
+3) Make the SNS Topic in AWS API
+    * Leave it all as default
+    * Just make a topic name && a display name
+    * Create subscription for the sqs queue to access
+
+4) Create a Message for the Topic
+    * After making it --> Queue won't pick it up    
+        ** Why?: SNS service does not have permission to send messages to queue
+    * How to fix:
+        ** Go to access policy in SQS
+        ** Choose Edit
+        ** Fill in appropriate JSON w/:
+            *** ARN for SQS queue
+            *** ARN for SNS topic
+
+5) Alter create_messages() so that it will pass them to SNS queue in code rather than with API  
+    * Remove the parameter of "queue_url"
+    * Add new create_messages() fxn
+        ** Make sure to add ARN for the Topic in SNS at Topic section of the sns.publish part
