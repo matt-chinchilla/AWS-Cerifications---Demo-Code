@@ -1,0 +1,37 @@
+1) Goals:
+    A) Create a DynamoDB table using the Management Console
+    B) Create Items (manually) to be placed into the DynamoDB table
+    C) Import a file out of S3 that contains a listing of Items
+    D) Write Python code to list those items, then write them to the DynamoDB table
+    E) Query the items in the DynamoDB table using the AWS SDK
+
+A) Create a DynamoDB table using the Management Console
+    * Make The table
+        ** Table name: "test-table"
+        ** Partition key: "Id": Number
+    * Make global secondary index
+        ** Partition key: "ProductCategory": String
+        ** Sort key:      "Price": Number
+    * Add the Other attributes to the Item
+
+B) Create Items (manually) to be placed into the DynamoDB table
+    * Clone repo into the folder
+        ** git clone https://github.com/backspace-academy/aws-dynamodb-python
+    * Reference AWS API documentation for the boto3.client(args[])
+    
+C) Import a file out of S3 that contains a listing of Items
+    * Create a bucket in s3
+        ** Make a folder
+        ** Install the JSON config file
+        ** Upload it to the bucket
+    * Make a call to the download_data() function in the main method
+        ** Make the function somewhere else in the file
+        ** Look at in-text notes to get more information
+
+D) Write Python code to list those items, then write them to the DynamoDB table
+    * Listing code is written to the download_data() function
+        ** Save the JSON data as a variable ('y')
+    * Append the function "write_dynamo_db(y)"
+
+E) Write queries against database
+    * Make a query_dynamo_db() functions
