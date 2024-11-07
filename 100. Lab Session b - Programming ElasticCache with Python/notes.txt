@@ -1,0 +1,24 @@
+1) Goals:
+    A) Launch an ElistiCache Redis cluster
+    B) Connect to that cluster with my IDE
+    C) Use a Redis client to WRITE and READ to that cluster
+    
+A)  Launch an ElistiCache cluster
+    * Make an inbound security group for my VSCode Workplace????
+        ** This is why the cancellation of Cloud9 is awful
+
+    * Launch inside of a Subnet Group
+        ** Maybe?
+
+B) Connect to the cluster   
+    * Clone from the lab using: git clone https://github.com/backspace-academy/aws-elasticache-redis-python
+    * Install dependencies
+        ** cd aws-elasticache-redis-python
+        ** sudo pip install redis
+        ** Check differeny python client availability at: redis.io/clients#python
+    * Paste the redisEndpoint from the API
+
+C) Writing data to the cluster  
+    * write into the redis DB:
+        ** My high score, and input an answer of 1000
+    ** Becomes imposssible without another EC2 instance of Cloud9 :(
